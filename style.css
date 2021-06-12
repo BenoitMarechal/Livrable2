@@ -987,7 +987,7 @@ text-align: justify;
           flex-direction: column;
           justify-content:  flex-start;
           align-items: center;
-          width: auto;         
+          width: 100%;         
           margin: 0px 20px 0px 20px;
           padding: 0px 0px 0px 0px;
         
@@ -1006,6 +1006,7 @@ text-align: justify;
         .vignette{
           margin: 0px 0px 25px 0px;
           padding: 5px;
+          width: 100%;
           max-width: 415px;
           
         }
@@ -1018,8 +1019,7 @@ text-align: justify;
         }
         #galerie_populaires .vignette img{
           width: 40%;
-         /* max-width: 195px;*/
-        }
+          }
 
           #galerie_populaires .vigntext{ 
             width: 60%; 
@@ -1038,7 +1038,7 @@ text-align: justify;
 
 
         #galerie_hebergements .vignette{
-          width: auto;
+          width: 100%;
           display: flex;
           height: 200px;
           max-height: unset;
@@ -1052,6 +1052,7 @@ text-align: justify;
           }
           #galerie_hebergements .vigntext p{
             margin: 5px 0px 5px 0px;
+            width: 100%;
             }
 
           #galerie_hebergements .vignette img{
