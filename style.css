@@ -983,8 +983,10 @@ text-align: justify;
         #galerie_populaires, #galerie_hebergements{
           
           display: flex;
-          flex-wrap: wrap;
-          justify-content:  center;
+          flex-wrap: nowrap;
+          flex-direction: column;
+          justify-content:  flex-start;
+          align-items: center;
           width: auto;         
           margin: 0px 20px 0px 20px;
           padding: 0px 0px 0px 0px;
@@ -992,6 +994,7 @@ text-align: justify;
         }
         #galerie_hebergements{
           background-color: white;
+      
         }
 
         aside h2, article h2{
@@ -1003,6 +1006,8 @@ text-align: justify;
         .vignette{
           margin: 0px 0px 25px 0px;
           padding: 5px;
+          max-width: 415px;
+          
         }
         
 
@@ -1013,10 +1018,12 @@ text-align: justify;
         }
         #galerie_populaires .vignette img{
           width: 40%;
+         /* max-width: 195px;*/
         }
 
           #galerie_populaires .vigntext{ 
             width: 60%; 
+           /*max-width: 220px;*/
             margin: 0px 0px 0px 0px;
             padding: 0px 15px 0px 10px;
           }
@@ -1094,6 +1101,8 @@ padding: 0px;
 
   .act{
     width: 100%;
+    display: flex;
+    justify-content: center;
   }
 
 figure img, #Act2, #Act3, #Act5, #Act6{
@@ -1110,6 +1119,7 @@ margin: 0px 0px 30px 0px;
 padding: 0px 0px 0px 0px;
 height: 200px;
 width: 100%;
+max-width: 500px;
 }
 
 #galerie_activites h3{
