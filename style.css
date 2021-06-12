@@ -1,0 +1,1208 @@
+/*FONTS*/
+@font-face {
+    font-family: 'Raleway';
+    src: url('polices/Raleway/Raleway-VariableFont_wght.ttf') format('truetype');        
+    font-weight: normal;
+    font-style: normal;}
+/*END FONTS*/
+
+
+body{
+ 
+  font-family: Raleway, arial;
+
+padding: 0px 50px 0px 50px;
+background-color: white;
+
+}  
+ .none{
+  display: none;
+ }
+
+/*HEADER*/
+
+header{
+  margin-bottom: 20px;
+}
+
+#logo_coin_SVG{
+  height: 50px;
+  position: relative;
+  top: 2px;
+  margin-bottom: 10px;
+}
+
+h2{
+  font-weight: bold;
+  font-size: 1.4em;
+}
+
+h3{
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+
+p{
+ font-size: 1em; 
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+    height: 100px;
+}
+
+nav ul{
+  display: flex;
+  list-style-type: none;
+  font-size: 0.9em;
+}
+
+nav li{
+  margin-right: 5px;
+  /*padding: 50px 10px 0px 10px;*/
+  
+}
+
+nav a{
+  text-decoration: none;
+  color: black;
+  padding: 50px 10px 0px 10px;
+}
+
+#inscrire a{
+  font-weight: bold;
+  color: #0065FC;
+}
+
+/*
+nav li:hover{
+  border-top: 1px solid #0065FC;   
+}
+*/
+
+nav a:hover{
+  color: #0065FC; 
+  border-top: 1px solid #0065FC;
+}
+
+
+#inscrire a:hover{
+      font-weight: normal;
+      border-top: none;
+      
+  }
+
+  
+
+
+/*SEARCH BAR*/
+#recherche{
+  display: flex;
+  align-items: center;
+  border-radius: 15px;
+height: 50px;
+max-width: 400px;
+}
+/* END SEARCH BAR*/
+
+
+/*map pin CONTAINER*/
+
+#map_pin_icon{
+  
+display: flex;
+height: 100%;
+width: 12%;
+justify-content: center;
+align-items: center;
+background-color: #F2F2F2;
+font-size: 1.4em;
+border-radius: 15px 0px 0px 15px;
+border: solid #F2F2F2 2px;
+}
+/*END map pin CONTAINER*/
+
+/*Champs ville*/
+
+#barre_de_recherche{
+  font-weight: bolder;
+  font-size: 1.1em;
+  background: white;  
+  border-top: 2px #F2F2F2 solid;
+  border-bottom: 2px #F2F2F2 solid;  
+  display: flex;
+  align-items: center;
+  padding-right: 20px;
+  padding-left: 10px;
+  width: 40%;
+  height: 100%;
+}
+
+/*SEARCH BUTTON*/
+#bouton_rechercher{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 25%;
+  background: #0065FC;
+  border-radius: 0px 15px 15px 0px;
+  border: 2px #0065FC solid;
+  color: white;
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+#icone_rechercher{
+  display: none;
+}
+/* END SEARCH BUTTON*/
+
+
+/*FILTRES*/
+
+ #filtres h3{
+  /*texte annonçant "filtre" avant les filtres*/
+  
+  font-size: 1.1em; 
+ display: flex;
+ align-items: center;
+ margin-right: 20px;
+ }
+
+
+#filtres{
+  /*barre entiere*/
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 20px;
+   }
+
+.bouton_filtre{
+  /*boutons entiers*/
+display: flex;
+align-items: center; 
+margin-left: 25px;
+margin-right: 5px;
+
+height: 40px;
+border-top: 2px solid #F2F2F2;
+border-right: 2px solid #F2F2F2;
+border-bottom: 2px solid #F2F2F2;
+border-bottom-right-radius: 20px;
+border-top-right-radius: 20px;
+text-decoration: none;
+color: black;
+}
+
+.bouton_filtre:hover{
+  /*hover boutons entiers*/
+color: #0065FC;
+border-top: 2px solid #0065FC;
+border-right: 2px solid #0065FC;
+border-bottom: 2px solid #0065FC;
+border-bottom-right-radius: 20px;
+border-top-right-radius: 20px;
+border-top-right-radius: 20px;
+border-bottom-right-radius: 20px;
+transform: scale(1.02);
+}
+
+
+#filtres p{
+  /*textes dans les boutons*/
+font-weight: bold;
+margin-right: 10px;
+border-top-right-radius: 20px;
+border-bottom-right-radius: 20px;
+height: 40px;
+padding-right: 10px;
+padding-left: 20px;
+display: flex;
+align-items: center;
+ }
+
+
+.bouton_filtre i{
+  /*icones dans les boutons*/
+font-size: 1.5em;
+text-align: center;
+display: flex;
+align-items: center;
+justify-content: center;
+background: #DEEBFF;
+height: 44px;
+width: 44px;
+border-radius: 22px;
+color: #0065FC;
+margin-right: -10px;
+position: relative;
+left: -20px;
+}
+/*fin bouton filtres*/
+
+
+/*ligne info*/
+/*icone ligne info*/
+#ligne_info i{
+  color: #0065FC;
+  height: 20px;
+  width: 20px;
+  border-radius: 10px;
+  border: 1px solid #F2F2F2;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  margin-right: 15px;
+  position: relative;
+  top: -2px;
+  font-size: 0.8em;
+}
+/*texte ligne info*/
+#ligne_info p{
+  color: black;
+  display: flex;
+  justify-content: flex-start;
+}
+/*fin ligne info*/
+/*END FILTERS*/
+
+/*END HEADER*/
+
+
+/*SECTION, ARTICLE et ASIDE*/
+
+/*textes SECTION1*/
+
+
+aside h2{/*passage en flex pour affichage du logo "chart" à l'autre bout du aside*/
+display: flex;
+justify-content: space-between;
+}
+
+#flechchart {
+  text-decoration-color: black;
+}
+
+article h3{
+margin-top: 5px;
+margin-bottom: 0px;
+}
+
+aside h3{
+margin-top: -5px;
+padding-right: 15px;
+text-align: left;
+}
+
+article p{
+margin-top: 0px;
+margin-bottom: 0px;
+}
+
+aside p{
+margin-top: -20px;
+margin-bottom: 20px;
+}
+
+
+
+
+section a{/*suppression soulingé bleu partout*/
+text-decoration: none;
+color: black;
+font-weight: normal;
+}
+
+#afficherplus a{ 
+font-weight: bold;
+}
+
+.vignette strong{
+  font-weight: bold;
+}
+
+/*FIN TEXTES SECTION1*/
+
+
+
+/*ETOILES DE SCORE*/
+.score{
+margin-left: 2px;
+}
+
+/*
+  color: #0065FC;
+*/
+
+.graystar{
+  color: #F2F2F2;
+}
+
+.bluestar{
+  color: #0065FC;
+}
+
+
+
+
+
+/*FIN ETOILES DE SCORE*/
+
+
+
+/*formatage sections*/
+
+section{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  height: 100%;   
+  }
+
+article{
+width:75%;
+padding-left: 20px;
+padding-right: 20px;
+margin-right: 25px;
+background: #F2F2F2;
+border-radius: 30px;
+}
+
+aside{
+width: 25%;
+padding-left: 20px;
+padding-right: 20px;
+background: #F2F2F2;
+border-radius: 30px;
+}
+
+
+#galerie_hebergements{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; 
+}
+
+#galerie_populaires{
+  
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+
+/*formatage vignettes general*/
+.vignette{
+min-width: 200px;
+background: white;
+border-radius: 20px;
+display: flex;
+padding: 5px;
+margin-bottom: 30px;
+box-shadow: 1px 1px 10px 2px gray;
+}
+
+/*formatage vignettes article*/
+#galerie_hebergements .vignette{
+  width: 29%;
+  max-height: 210px;
+  flex-direction: column;
+}
+
+
+/*formatage vignettes aside*/
+#galerie_populaires .vignette{
+  height: 150px;
+  width: 100%;
+  display: flex; 
+   
+
+}
+
+
+
+/*vignette image general*/
+ .vignette img{
+    object-fit: cover;
+    overflow: hidden;
+    text-align: center;
+     }
+
+/*vignette image article*/
+
+#galerie_hebergements .vignette img{
+    width: 100%;
+    /*height: 500px;*/
+    height: 60%;
+    max-height: 200px;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px; 
+    
+  }
+
+/*vignette image aside*/
+
+#galerie_populaires .vignette img{
+    width: 35%;
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+    }
+
+
+/*formatage texte vignettes general*/
+.vigntext{
+  font-size: 0.9em;
+  text-decoration: none;
+  color: black;
+  text-align: justify;
+  margin-left: 5px;
+  padding-right: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-left: 15px;  
+}
+
+
+/*formatage texte vignettes article*/
+#galerie_hebergements .vigntext{
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; 
+  }
+
+
+/*formatage texte vignettes aside*/
+  aside .vigntext{
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+   }
+
+/*END SECTION 1*/
+
+
+/*SECTION 2 ACTIVITES*/
+
+#activites{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  }
+
+/*
+#activites h2{
+ font-size: 1.4em;
+ }
+ */
+
+
+#galerie_activites{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-content: space-between;
+  width: 100%;
+  }
+
+.case{
+
+  width: 23%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: stretch;
+  padding: 0px;
+  margin: 0px;
+  }
+
+figure{
+  margin: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content:space-around;
+  border-radius: 21px;
+  box-shadow: 1px 1px 10px 2px gray;
+}
+
+
+#galerie_activites h3{
+ font-size: 1.1em ;
+ font-weight: bolder;
+ width: 100%;
+ height: 70px;
+ margin-top: 0px;
+ margin-bottom: 0px;
+ padding-left: 20px;
+ display: flex;
+align-items: center;
+border-bottom-left-radius: 20px;
+border-bottom-right-radius: 20px;
+}
+
+
+figure img{
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  margin-bottom: 0px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+#Act2{
+  height:230px;
+  }
+
+
+#Act3{
+  height:110px;
+}
+
+
+#Act5{
+  height:170px
+}
+
+#Act6{
+  height:170px;
+}
+
+/*FIN ACTIVITES*/
+
+/*FOOTER*/
+footer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background: #F2F2F2;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin: 0px -50px 0px -50px; 
+  padding:  30px 50px 30px 50px;
+}
+
+footer h2{
+  font-size: 1.1em;
+}
+
+
+footer a {
+text-decoration: none;
+color: black;
+font-size: 0.9em;    
+}
+
+footer ul{
+  margin-left: 0px;  
+  padding: 0px;
+}
+
+footer li{
+  list-style-type: none;
+
+}
+
+.foot{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  width: 33%;
+  }
+/*END FOOTER*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*RESPONSIVE*/
+
+
+@media screen and (max-width: 1280px)
+{
+          body{            
+            margin: 0px 0px 0px 0px;
+            padding:0px 0px 0px 0px;
+            
+          }
+
+  /*RESPONSIVE HEADER*/
+  header{
+          margin:0px 20px 0px 20px;
+        }
+
+  /*REPONSIVE NAV*/
+  nav{
+        height: auto;
+        
+        }
+        
+        #logo_coin_SVG{
+            position: absolute;
+            top: 12px;  
+        }
+        
+        nav ul{
+        
+         
+        width: 100%;
+        display: flex;
+        margin: 45px 0px 0px 0px;        
+        padding: 0px 0px 0px 0px;
+        }
+
+        nav ul :nth-child(1){
+          order:3
+        }
+        nav ul :nth-child(2){
+          order:2
+        }        nav ul :nth-child(3){
+          order:1
+        }
+
+
+        nav li{
+          margin:0px 0px 0px 0px;
+          padding: 15px 0px 5px 0px;
+          width: 50%;
+          text-align: center;
+                    
+        }
+
+        #inscrire{
+          
+          position: absolute;
+          margin: 0px;
+          padding:0px;
+          width: auto;
+          right: 20px;
+          top:32px;
+          text-align: right;
+        }
+
+        #navact {
+          margin-left: -15px;
+          margin-right: 0px;
+          padding-right: 15px;
+        }
+
+        #navact a{
+          border-bottom: #F2F2F2 2px solid;
+          display: flex;
+          justify-content: center;
+          width: auto;
+          height: auto;
+          margin-left: 0px;
+          margin-right: -15px;
+          padding: 10px 0px 10px 15px;
+          }
+
+        #navact :active{
+            border-bottom: #0065FC 2px solid;
+            border-top:none;
+          }     
+
+        #navheb{
+          margin-left: 0px;
+          margin-right: -15px;
+          padding-left: 0px;
+          padding-right: 15px;
+        }
+
+        #navheb a{
+          border-bottom: #F2F2F2 2px solid;
+          display: flex;
+          justify-content: center;
+          width: auto;
+          height: auto;
+          margin-left: 0px;
+          margin-right: -15px;
+          padding: 10px 15px 10px 0px;                    
+          }
+
+          #navheb :active{
+            border-bottom: #0065FC 2px solid;
+            border-top:none;
+          }  
+        
+  /*FIN REPONSIVE NAV*/
+  /*RESPONSIVE SEARCH BAR*/
+                
+#recherche{
+  display: flex;
+  margin: 0px 1px 0px 1px;
+  border-top: 2px solid #F2F2F2;
+  border-bottom: 2px solid #F2F2F2;  
+  width: 100%;
+  padding:0px 0px 0px  0px;
+  margin:0px 0px 0px 0px;
+  justify-content: space-between;
+  max-width: unset;
+  
+}
+
+
+#map_pin_icon{
+  
+width: auto;
+height:calc(100% + 4px);
+margin-left: -1px;
+padding: 0px 15px 0px 15px; 
+border-radius: 15px 0px 0px 15px;
+border: none;
+}
+/*END map pin CONTAINER*/
+
+
+/*Champs ville*/
+
+#barre_de_recherche{
+  width: 100%;
+  
+  margin: 0px;
+  justify-content: center;  
+  border: none;
+}
+
+
+#icone_rechercher{
+  width: auto;
+  padding: 0px 15px 0px 15px;  
+height:calc(100% + 4px);
+margin-right:  -1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;   
+  background: #0065FC;
+  border-radius: 15px 15px 15px 15px;  
+  color: white;
+  text-decoration: none;
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+#bouton_rechercher{
+  display: none;
+}        
+/*FIN RESPONSIVE SEARCH BAR*/
+
+/*RESPONSIVE FILTRES*/
+
+#filtres{
+  /*barre entiere*/
+flex-wrap: wrap;  
+justify-content: flex-start;
+}
+
+.bouton_filtre{
+margin: 10px 10px  0px 20px;
+padding-left: 0px;          
+}
+        
+#filtres h3{
+width: 100%;
+font-weight: bolder;
+margin:0px;
+padding: 0px;
+}
+
+#filtres p{
+margin: 0px 10px 0px 0px;          
+padding: 0px 0px 0px 0px;
+}
+
+
+       
+
+        
+#ligne_info p{
+text-align: justify;
+}
+
+/*FIN RESPONSIVE FILTRES*/
+
+/*RESPONSIVE ligne info*/
+
+
+
+/*fin RESPONSIVE ligne info*/
+/*FIN RESPONSIVE HEADER*/
+
+
+/*RESPONSIVE SECTION1*/
+        #logements{
+        flex-direction: column-reverse;  
+        flex-wrap: wrap;
+        width: auto;
+        }
+
+
+        section
+        {margin: 0px 0px 0px 0px;
+          padding: 0px 0px 0px 0px;          
+          height: auto;
+          justify-content: center;
+          width: auto;
+          }
+          
+        article{
+          background-color: white;
+        }
+
+        aside, article{          
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          width: auto;
+          margin: 0px 0px 0px 0px;
+          padding: 0px 0px 0px 0px;
+          border-radius: 0px;
+        }
+
+        #afficherplus{
+          display: flex;
+          justify-content: flex-start;
+          /*text-align: left;*/
+          width: 100%;
+          margin: 10px 0px 10px 20px;
+        }
+
+        #galerie_populaires, #galerie_hebergements{
+          
+          display: flex;
+          flex-wrap: wrap;
+          justify-content:  center;
+          width: auto;         
+          margin: 0px 20px 0px 20px;
+          padding: 0px 0px 0px 0px;
+        
+        }
+        #galerie_hebergements{
+          background-color: white;
+        }
+
+        aside h2, article h2{
+          width: 100%;
+          margin: 20px 20px 20px 20px;
+          padding: 0px;
+          }
+          
+        .vignette{
+          margin: 0px 0px 25px 0px;
+          padding: 5px;
+        }
+        
+
+        #galerie_populaires .vignette{
+          height: 150px;
+          width: auto;
+          display: flex;
+        }
+        #galerie_populaires .vignette img{
+          width: 40%;
+        }
+
+          #galerie_populaires .vigntext{ 
+            width: 60%; 
+            margin: 0px 0px 0px 0px;
+            padding: 0px 15px 0px 10px;
+          }
+
+
+
+
+
+
+
+
+
+
+        #galerie_hebergements .vignette{
+          width: auto;
+          display: flex;
+          height: 200px;
+          max-height: unset;
+        }
+
+        #galerie_hebergements .vigntext{
+          height: 30%;  
+          margin: 10px 0px 15px 10px;
+          padding: 0px 0px 0px 0px;
+          justify-content: space-between;
+          }
+          #galerie_hebergements .vigntext p{
+            margin: 5px 0px 5px 0px;
+            }
+
+          #galerie_hebergements .vignette img{
+            width: 100%;
+            height: 70%;
+            max-height: unset;
+            border-top-left-radius: 16px;
+            border-top-right-radius: 16px; 
+          }
+/*FIN RESPONSIVE SECTION1*/     
+
+
+
+/*RESPONSIVE SECTION2 ACTIVITES*/
+/*SECTION 2 ACTIVITES*/
+
+
+#activites{
+  width: auto;
+  margin: 0px 20px 0px 20px ;
+}
+
+#activites h2{
+display: flex;
+width: 100%;
+justify-content: flex-start;
+align-items: flex-start;
+padding: 0px;
+ }
+
+#galerie_activites{
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 0px 0px 0px;
+  margin:0px 0px 0px 0px ;
+  width: auto;
+  }
+
+.case{
+  width: 100%;
+  height: auto;  
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  }
+
+  .act{
+    width: 100%;
+  }
+
+figure img, #Act2, #Act3, #Act5, #Act6{
+    width: 100% ;    
+    object-fit: cover;
+    height: 70%;
+    margin-bottom: 0px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+
+figure{
+margin: 0px 0px 30px 0px;
+padding: 0px 0px 0px 0px;
+height: 200px;
+width: 100%;
+}
+
+#galerie_activites h3{
+  font-size: 1.1em ;
+  font-weight: bolder;
+  width: 100%;
+  height: 30%;
+  margin: 0px 0px 0px 15px;
+  padding-left: 0px;
+  display: flex;
+ align-items: center;
+ border-bottom-left-radius: 20px;
+ border-bottom-right-radius: 20px;
+ }
+
+  /*FIN ACTIVITES*/
+/*FIN RESPONSIVE SECTION2 ACTIVITES*/
+
+
+/*RESPONSIVE FOOTER*/
+        
+footer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  width: auto;
+  background: #F2F2F2;
+  margin: 0px 0px 0px 0px ; 
+  padding:  20px 0px 20px 0px; 
+}
+
+.foot{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 0px 0px 0px 20px;
+  padding: 0px;
+  flex-wrap: wrap;
+  width: auto;
+  }
+
+  .foot p, .foot h2{
+    text-align: left;
+  }
+
+  footer ul{
+    margin:5px 0px 5px 0px;
+
+  }
+
+  footer h2{
+    margin: 5px 0px 5px 0px;
+  }
+/*END RESPONSIVE FOOTER*/ 
+
+/*RESPONSIVE TAILLE POLICES*/
+
+
+.vigntext h3{
+  font-size: 1.2em;
+  
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+}
+
+.vigntext p{
+  font-size: 1.1em;  
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  }
+
+
+
+/*END RESPONSIVE*/
+
+
+}
