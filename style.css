@@ -108,16 +108,17 @@ max-width: 400px;
 /*map pin CONTAINER*/
 
 #map_pin_icon{
-  
+  width: auto;
+height:calc(100% + 4px);
+margin-left: -1px;
+padding: 0px 15px 0px 15px; 
+border-radius: 15px 0px 0px 15px;
 display: flex;
-height: 100%;
-width: 12%;
 justify-content: center;
 align-items: center;
 background-color: #F2F2F2;
 font-size: 1.4em;
-border-radius: 15px 0px 0px 15px;
-border: solid #F2F2F2 2px;
+
 }
 /*END map pin CONTAINER*/
 
