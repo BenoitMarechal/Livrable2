@@ -138,7 +138,7 @@ border: solid #F2F2F2 2px;
 }
 
 /*SEARCH BUTTON*/
-#bouton_rechercher{
+.bouton_rechercher{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -153,8 +153,8 @@ border: solid #F2F2F2 2px;
   font-weight: bold;
 }
 
-#icone_rechercher{
-  display: none;
+.recherche__loupe{
+ display: none;
 }
 /* END SEARCH BUTTON*/
 
@@ -878,7 +878,8 @@ border: none;
 }
 
 
-#icone_rechercher{
+
+.bouton_rechercher{
   width: auto;
   padding: 0px 15px 0px 15px;  
 height:calc(100% + 4px);
@@ -894,9 +895,16 @@ margin-right:  -1px;
   font-weight: bold;
 }
 
-#bouton_rechercher{
+.recherche__loupe{
+  display: block;
+} 
+
+.recherche__lettres{
   display: none;
-}        
+}
+
+
+
 /*FIN RESPONSIVE SEARCH BAR*/
 
 /*RESPONSIVE FILTRES*/
