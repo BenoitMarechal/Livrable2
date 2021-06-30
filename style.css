@@ -282,12 +282,12 @@ left: -20px;
 /*END HEADER*/
 
 
-/*SECTION, ARTICLE et ASIDE*/
+/*SECTION, ex-#hebergements et exASIDE*/
 
 /*textes SECTION1*/
 
 
-aside h2{/*passage en flex pour affichage du logo "chart" à l'autre bout du aside*/
+#pop h2{/*passage en flex pour affichage du logo "chart" à l'autre bout du #pop*/
 display: flex;
 justify-content: space-between;
 }
@@ -296,23 +296,23 @@ justify-content: space-between;
   text-decoration-color: black;
 }
 
-article h3{
+#hebergements h3{
 margin-top: 5px;
 margin-bottom: 0px;
 }
 
-aside h3{
+#pop h3{
 margin-top: -5px;
 padding-right: 15px;
 text-align: left;
 }
 
-article p{
+#hebergements p{
 margin-top: 0px;
 margin-bottom: 0px;
 }
 
-aside p{
+#pop p{
 margin-top: -20px;
 margin-bottom: 20px;
 }
@@ -320,7 +320,7 @@ margin-bottom: 20px;
 
 
 
-section a{/*suppression soulingé bleu partout*/
+section a{/*suppression souligné bleu partout*/
 text-decoration: none;
 color: black;
 font-weight: normal;
@@ -368,16 +368,17 @@ section{
   height: 100%;   
   }
 
-article{
+#hebergements{
 width:75%;
 padding-left: 20px;
 padding-right: 20px;
 margin-right: 25px;
 background: #F2F2F2;
 border-radius: 30px;
+display: block;
 }
 
-aside{
+#pop{
 width: 25%;
 padding-left: 20px;
 padding-right: 20px;
@@ -411,7 +412,7 @@ margin-bottom: 30px;
 box-shadow: 1px 1px 10px 2px gray;
 }
 
-/*formatage vignettes article*/
+/*formatage vignettes #hebergements*/
 #galerie_hebergements .vignette{
   width: 29%;
   max-height: 210px;
@@ -419,7 +420,7 @@ box-shadow: 1px 1px 10px 2px gray;
 }
 
 
-/*formatage vignettes aside*/
+/*formatage vignettes #pop*/
 #galerie_populaires .vignette{
   height: 150px;
   width: 100%;
@@ -437,7 +438,7 @@ box-shadow: 1px 1px 10px 2px gray;
     text-align: center;
      }
 
-/*vignette image article*/
+/*vignette image #hebergements*/
 
 #galerie_hebergements .vignette img{
     width: 100%;
@@ -448,7 +449,7 @@ box-shadow: 1px 1px 10px 2px gray;
     
   }
 
-/*vignette image aside*/
+/*vignette image #pop*/
 
 #galerie_populaires .vignette img{
     width: 35%;
@@ -472,7 +473,7 @@ box-shadow: 1px 1px 10px 2px gray;
 }
 
 
-/*formatage texte vignettes article*/
+/*formatage texte vignettes #hebergements*/
 #galerie_hebergements .vigntext{
   height: 40%;
   display: flex;
@@ -481,8 +482,8 @@ box-shadow: 1px 1px 10px 2px gray;
   }
 
 
-/*formatage texte vignettes aside*/
-  aside .vigntext{
+/*formatage texte vignettes #pop*/
+  #pop .vigntext{
   width: 60%;
   display: flex;
   flex-direction: column;
@@ -1023,11 +1024,11 @@ text-align: justify;
           width: auto;
           }
           
-        article{
+        #hebergements{
           background-color: white;
         }
 
-        aside, article{          
+        #pop, #hebergements{          
           display: flex;
           flex-wrap: wrap;
           justify-content: center;
@@ -1062,7 +1063,7 @@ text-align: justify;
       
         }
 
-        aside h2, article h2{
+        #pop h2, #hebergements h2{
           width: 100%;
           margin: 20px 20px 20px 20px;
           padding: 0px;
