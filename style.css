@@ -19,20 +19,10 @@ background-color: white;
   display: none;
  }
 
-/*HEADER*/
 
-header{
-  margin-bottom: 20px;
-}
+ /*Typo*/
 
-#logo_coin_SVG{
-  height: 50px;
-  position: relative;
-  top: 2px;
-  margin-bottom: 10px;
-}
-
-h2{
+ h2{
   font-weight: bold;
   font-size: 1.4em;
 }
@@ -47,26 +37,46 @@ p{
  font-size: 1em; 
 }
 
-nav{
+
+/*HEADER*/
+
+header{
+  margin-bottom: 20px;
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
-    height: 100px;
+  
 }
 
-nav ul{
+#logo_coin_SVG{
+  height: 50px;
+  position: relative;
+  top: 50px;
+  margin-bottom: 10px;
+}
+
+
+
+.nav__upper{
+  
+    height: 100px;
+    
+    display: flex;
+    align-content: flex-end;
+}
+
+.nav__upper ul{
   display: flex;
+  align-items: flex-end;
   list-style-type: none;
   font-size: 0.9em;
 }
 
-nav li{
-  margin-right: 5px;
-  
+.nav__upper li{
+  margin-right: 5px; 
   
 }
 
-nav a{
+.nav__upper a{
   text-decoration: none;
   color: black;
   padding: 50px 10px 0px 10px;
@@ -79,7 +89,7 @@ nav a{
 
 
 
-nav a:hover{
+.nav__upper a:hover{
   color: #0065FC; 
   border-top: 1px solid #0065FC;
 }
@@ -748,8 +758,8 @@ footer li{
           margin:0px 20px 0px 20px;
         }
 
-  /*REPONSIVE NAV*/
-  nav{
+  /*REPONSIVE NAV__upper*/
+  .nav__upper{
         height: auto;
         }
         
@@ -758,24 +768,25 @@ footer li{
             top: 12px;  
         }
         
-        nav ul{
+        .nav__upper ul{
         width: 100%;
         display: flex;
         margin: 45px 0px 0px 0px;        
         padding: 0px 0px 0px 0px;
         }
 
-        nav ul :nth-child(1){
+        .nav__upper ul :nth-child(1){
           order:3
         }
-        nav ul :nth-child(2){
+        .nav__upper ul :nth-child(2){
           order:2
-        }        nav ul :nth-child(3){
+        }        
+        .nav__upper ul :nth-child(3){
           order:1
         }
 
 
-        nav li{
+        .nav__upper li{
           margin:0px 0px 0px 0px;
           padding: 15px 0px 5px 0px;
           width: 50%;
@@ -853,7 +864,13 @@ footer li{
 
       
         
-  /*FIN REPONSIVE NAV*/
+  /*FIN REPONSIVE NAV__upper*/0
+  .nav__lower{
+      margin:0px 20px 0px 20px;
+    
+  }
+
+
   /*RESPONSIVE SEARCH BAR*/
                 
 #recherche{
