@@ -82,9 +82,13 @@ header{
   padding: 50px 10px 0px 10px;
 }
 
+#inscrire{
+  width:83px;
+}
+
 #inscrire a{
   font-weight: bold;
-  color: #0065FC;
+  color: #0065FC;  
 }
 
 
