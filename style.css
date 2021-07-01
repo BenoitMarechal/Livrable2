@@ -370,7 +370,8 @@ section{
   display: flex;
   width: 100%;
   justify-content: space-between;
-  height: 100%;   
+  height: 100%;
+  
   }
 
 #hebergements{
@@ -381,6 +382,7 @@ margin-right: 25px;
 background: #F2F2F2;
 border-radius: 30px;
 display: block;
+height: auto;
 }
 
 #pop{
