@@ -1065,7 +1065,7 @@ text-align: justify;
           display: flex;
           flex-wrap: nowrap;
           flex-direction: column;
-          justify-content:  flex-start;
+          justify-content:  center;
           align-items: center;
           width: 100%;         
           margin: 0px 20px 0px 20px;
@@ -1077,8 +1077,9 @@ text-align: justify;
         }
 
         #galerie_hebergements article{
-          width: auto;
+          width: 100%;
           max-height: unset;
+          justify-content: center;
           
         }
 
@@ -1161,10 +1162,16 @@ padding: 0px;
 #galerie_activites{
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
+  justify-content: center;  
   padding: 0px 0px 0px 0px;
   margin:0px 0px 0px 0px ;
   width: auto;
+  }
+
+  #galerie_activites article{
+    width: 100%;
+    
+    
   }
 
 .case{
