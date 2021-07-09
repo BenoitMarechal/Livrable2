@@ -1038,6 +1038,10 @@ text-align: justify;
         #logements{
         flex-direction: column-reverse;  
         flex-wrap: wrap;
+        margin: 0px 0px 0px 0px;
+          padding: 0px 0px 0px 0px;          
+          height: auto;
+          justify-content: center
         
         }
 
